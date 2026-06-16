@@ -543,12 +543,12 @@ toolbar:not([place="palette"])  #email-link-button::before{
 
 /* 2. Custom icon for overflow + palette */
 #share-button[overflowedItem],
-toolbarpaletteitem[place="palette"] #share-button {
+toolbarpaletteitem[place="palette"] #social-share-button  {
     list-style-image: url("../icons/email-link.svg") !important;
 }
 
 /* 3. Custom masked icon for toolbar (::before) */
-toolbar:not([place="palette"]) #share-button::before {
+toolbar:not([place="palette"]) #social-share-button ::before {
     content: '' !important;
     display: block !important;
     background-color: var(--toolbox-textcolor);
