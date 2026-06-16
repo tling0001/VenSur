@@ -537,18 +537,18 @@ toolbar:not([place="palette"])  #email-link-button::before{
 
    
 /* 1. Remove Firefox's built‑in icon */
-toolbarbutton[tooltiptext="Share this page"] {
+#share-button {
     list-style-image: none !important;
 }
 
 /* 2. Custom icon for overflow + palette */
-toolbarbutton[tooltiptext="Share this page"][overflowedItem],
-toolbarpaletteitem[place="palette"] toolbarbutton[tooltiptext="Share this page"] {
+#share-button[overflowedItem],
+toolbarpaletteitem[place="palette"] #share-button {
     list-style-image: url("../icons/email-link.svg") !important;
 }
 
 /* 3. Custom masked icon for toolbar (::before) */
-toolbar:not([place="palette"]) toolbarbutton[tooltiptext="Share this page"]::before {
+toolbar:not([place="palette"]) #share-button::before {
     content: '' !important;
     display: block !important;
     background-color: var(--toolbox-textcolor);
